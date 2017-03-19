@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        
+        <script>
+            window.onload = function(){
+                var btn = document.getElementById("btn");
+                btn.onclick = function(){
+                   //在这里建立js与OC对话的规则
+                   window.location.href = "msg://func";
+                }
+                
+                
+                var photoBtn = document.getElementById("photoBtn");
+                photoBtn.onclick = function(){
+                    //在这里建立js与OC对话的规则
+                    window.location.href = "msg://openCamera";
+                }
+            
+            }
+        
+        
+        </script>
+        
+        
+        
+	</head>
+	<body>
+		<h1>沁园春</h1>
+		<p>
+			昔秦皇汉武，略输文采。<br />
+			唐宗宋祖，稍逊风骚。<br />
+			一代天骄，成吉思汗，只识弯弓射大雕。<br />
+			俱往矣，数风流人物，还看今朝。<br />
+			
+		</p>
+        
+        <input type="text" placeholder="请输入内容" id="txt"/>
+		
+        <button id="btn">点击调用oc代码</button>
+        <button id="photoBtn">打开相册</button><br />
+		<img id = "photo" style="height:200px;width:200px;background:red"/>
+        
+        <a href="tel:15910569368">拨打电话</a>
+        
+        
+		
+	</body>
+</html>
